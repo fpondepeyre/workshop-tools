@@ -27,6 +27,7 @@
         "symfony/yaml": "4.2.*"
     },
     "require-dev": {
+        "phpro/grumphp": "^0.14.3",
         "phpstan/phpstan": "^0.10.6",
         "phpstan/phpstan-doctrine": "^0.10.0",
         "phpstan/phpstan-strict-rules": "^0.10.1",
