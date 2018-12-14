@@ -1,0 +1,13 @@
+parameters:
+    symfony:
+        container_xml_path: %rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml
+    excludes_analyse:
+        - %rootDir%/../../../var/
+        - %rootDir%/../../../vendor/
+        - %rootDir%/../../../src/Migrations/
+    ignoreErrors:
+
+includes:
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+    - vendor/phpstan/phpstan-symfony/extension.neon
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
