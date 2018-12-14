@@ -1,13 +1,9 @@
 <?php
-
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__ . '/src')
+    ->in(__DIR__)
     ->exclude('config')
-    ->exclude('vendor')
     ->exclude('var')
-    ->exclude('tests')
 ;
-
 return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
     ->setRules([
@@ -15,4 +11,5 @@ return PhpCsFixer\Config::create()
         'array_syntax' => ['syntax' => 'short'],
     ])
     ->setFinder($finder)
+    ->setCacheFile(__DIR__.'/var/.php_cs.cache')
 ;
