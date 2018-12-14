@@ -6,3 +6,7 @@ parameters:
             triggered_by: ['php']
             level: 7
         phpcsfixer2: ~
+        phpcpd:
+            directory: 'src'
+            exclude: ['vendor', 'var', 'tests']
+            min_tokens: 50
