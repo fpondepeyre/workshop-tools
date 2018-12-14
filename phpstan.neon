@@ -2,6 +2,8 @@ parameters:
     symfony:
         container_xml_path: %rootDir%/../../../var/cache/dev/srcApp_KernelDevDebugContainer.xml
     excludes_analyse:
+        - %rootDir%/../../../src/Kernel.php
+        - %rootDir%/../../../config/
         - %rootDir%/../../../var/
         - %rootDir%/../../../vendor/
         - %rootDir%/../../../src/Migrations/

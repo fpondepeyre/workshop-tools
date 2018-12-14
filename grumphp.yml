@@ -5,7 +5,9 @@ parameters:
         phpstan:
             triggered_by: ['php']
             level: 7
-        phpcsfixer2: ~
+        phpcsfixer2:
+            config: .php_cs.dist
+            rules: ['@@Symfony']
         phpcpd:
             directory: 'src'
             exclude: ['vendor', 'var', 'tests']
