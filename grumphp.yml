@@ -12,3 +12,13 @@ parameters:
             min_tokens: 50
         phplint:
             exclude: ['vendor', 'var']
+        git_blacklist:
+            keywords: ['die(','var_dump(','print_f(','dump(','exit;']
+            triggered_by: ['php']
+        git_commit_message:
+            enforce_capitalized_subject: false
+            enforce_no_subject_trailing_period: false
+            max_body_width: 256
+            max_subject_width: 256
+            matchers:
+                commit_message_format: '/^(feat|fix): (.*)$/'
