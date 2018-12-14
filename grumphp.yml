@@ -3,9 +3,6 @@ parameters:
     bin_dir: vendor/bin
     tasks:
         phpstan:
-            configuration: phpstan.neon
             triggered_by: ['php']
             level: 7
-        phpcsfixer2:
-            config: .php_cs.dist
-            rules: ['@@Symfony']
+        phpcsfixer2: ~
