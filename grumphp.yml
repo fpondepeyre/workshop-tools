@@ -10,3 +10,5 @@ parameters:
             directory: 'src'
             exclude: ['vendor', 'var', 'tests']
             min_tokens: 50
+        phplint:
+            exclude: ['vendor', 'var']
